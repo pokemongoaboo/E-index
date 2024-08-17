@@ -45,8 +45,8 @@ def main():
                         align-items: center;
                         margin-bottom: 20px;
                     ">
-                        <h3 style="margin-bottom: 5px; color: #ffffff;">{service['name']}</h3>
-                        <p style="margin-bottom: 15px; color: #ffffff; font-size: 1.4em; font-weight: bold;">{service['en_name']}</p>
+                        <h3 style="margin: 0; color: #ffffff;">{service['name']}</h3>
+                        <p style="margin: 10px 0; color: #ffffff; font-size: 1.4em; font-weight: bold;">{service['en_name']}</p>
                         <a href="{service['url']}" target="_blank" style="
                             background-color: #ffffff;
                             color: #81D8D0;
@@ -71,8 +71,8 @@ def main():
                         align-items: center;
                         margin-bottom: 20px;
                     ">
-                        <h3 style="margin-bottom: 5px; color: #333333;">{service['name']}</h3>
-                        <p style="margin-bottom: 15px; color: #333333; font-size: 1.4em; font-weight: bold;">{service['en_name']}</p>
+                        <h3 style="margin: 0; color: #333333;">{service['name']}</h3>
+                        <p style="margin: 10px 0; color: #333333; font-size: 1.4em; font-weight: bold;">{service['en_name']}</p>
                         <small style="color: #666666;">建構中 (Under Construction)</small>
                     </div>
                     """, unsafe_allow_html=True)
