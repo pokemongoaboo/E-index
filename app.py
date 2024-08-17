@@ -1,38 +1,11 @@
 import streamlit as st
-import streamlit.components.v1 as components
 
 def main():
     st.set_page_config(page_title="九宮格服務", layout="wide")
 
-    st.title("九宮格服務")
+    st.title("AI智慧陪伴助理-九宮格服務(AI Assistant for Aging Servcies)")
 
-    # 自定義CSS
-    st.markdown("""
-    <style>
-    .service-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        margin-top: 30px;
-    }
-    .service-item {
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        padding: 20px;
-        text-align: center;
-        transition: transform 0.3s ease;
-    }
-    .service-item:hover {
-        transform: translateY(-5px);
-    }
-    .under-construction {
-        background-color: #ffeeba;
-        color: #856404;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-    # 九宮格服務
+    # 定義服務列表
     services = [
         {"name": "查行事曆", "en_name": "Check Calendar", "url": "https://e-readcalendar.streamlit.app/"},
         {"name": "查農民曆", "en_name": "Lunar Calendar", "url": "https://e-lunarexp.streamlit.app/"},
@@ -45,28 +18,50 @@ def main():
         {"name": "應用市集", "en_name": "Apps Market", "url": None}
     ]
 
-    # 使用HTML和CSS創建九宮格
-    grid_html = '<div class="service-grid">'
-    for service in services:
-        if service["url"]:
-            grid_html += f"""
-            <a href="{service['url']}" target="_blank" class="service-item">
-                <h3>{service['name']}</h3>
-                <p>{service['en_name']}</p>
-            </a>
-            """
-        else:
-            grid_html += f"""
-            <div class="service-item under-construction">
-                <h3>{service['name']}</h3>
-                <p>{service['en_name']}</p>
-                <small>建構中 (Under Construction)</small>
-            </div>
-            """
-    grid_html += '</div>'
-
-    # 渲染HTML
-    components.html(grid_html, height=600)
+    # 使用Streamlit的列和列布局創建九宮格
+    for i in range(0, 9, 3):
+        cols = st.columns(3)
+        for j in range(3):
+            with cols[j]:
+                service = services[i+j]
+                if service["url"]:
+                    st.markdown(f"""
+                    <div style="
+                        background-color: #f8f9fa;
+                        border-radius: 10px;
+                        padding: 20px;
+                        text-align: center;
+                        height: 150px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 20px;
+                    ">
+                        <h3 style="margin-bottom: 10px;">{service['name']}</h3>
+                        <p style="margin-bottom: 10px;">{service['en_name']}</p>
+                        <a href="{service['url']}" target="_blank">前往服務</a>
+                    </div>
+                    """, unsafe_allow_html=True)
+                else:
+                    st.markdown(f"""
+                    <div style="
+                        background-color: #ffeeba;
+                        border-radius: 10px;
+                        padding: 20px;
+                        text-align: center;
+                        height: 150px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 20px;
+                    ">
+                        <h3 style="margin-bottom: 10px;">{service['name']}</h3>
+                        <p style="margin-bottom: 10px;">{service['en_name']}</p>
+                        <small>建構中 (Under Construction)</small>
+                    </div>
+                    """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
