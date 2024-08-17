@@ -3,7 +3,11 @@ import streamlit as st
 def main():
     st.set_page_config(page_title="AI智慧陪伴助理-九宮格服務", layout="wide")
 
-    st.title("AI智慧陪伴助理-九宮格服務(AI Assistant for Aging Services)")
+    # 使用 markdown 來創建兩行標題
+    st.markdown("""
+    # AI智慧陪伴助理-九宮格服務
+    ## (AI Assistant for Aging Services)
+    """)
 
     # 添加一些間距
     st.markdown("<br>", unsafe_allow_html=True)
@@ -34,15 +38,15 @@ def main():
                         border-radius: 10px;
                         padding: 20px;
                         text-align: center;
-                        height: 150px;
+                        height: 160px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         margin-bottom: 20px;
                     ">
-                        <h3 style="margin-bottom: 10px; color: #ffffff;">{service['name']}</h3>
-                        <p style="margin-bottom: 10px; color: #ffffff;">{service['en_name']}</p>
+                        <h3 style="margin-bottom: 5px; color: #ffffff;">{service['name']}</h3>
+                        <p style="margin-bottom: 10px; color: #ffffff; font-size: 1.2em; font-weight: bold;">{service['en_name']}</p>
                         <a href="{service['url']}" target="_blank" style="
                             background-color: #ffffff;
                             color: #81D8D0;
@@ -60,15 +64,15 @@ def main():
                         border-radius: 10px;
                         padding: 20px;
                         text-align: center;
-                        height: 150px;
+                        height: 160px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         margin-bottom: 20px;
                     ">
-                        <h3 style="margin-bottom: 10px; color: #333333;">{service['name']}</h3>
-                        <p style="margin-bottom: 10px; color: #333333;">{service['en_name']}</p>
+                        <h3 style="margin-bottom: 5px; color: #333333;">{service['name']}</h3>
+                        <p style="margin-bottom: 10px; color: #333333; font-size: 1.2em; font-weight: bold;">{service['en_name']}</p>
                         <small style="color: #666666;">建構中 (Under Construction)</small>
                     </div>
                     """, unsafe_allow_html=True)
