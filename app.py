@@ -1,9 +1,12 @@
 import streamlit as st
 
 def main():
-    st.set_page_config(page_title="九宮格服務", layout="wide")
+    st.set_page_config(page_title="AI智慧陪伴助理-九宮格服務", layout="wide")
 
-    st.title("AI智慧陪伴助理-九宮格服務(AI Assistant for Aging Servcies)")
+    st.title("AI智慧陪伴助理-九宮格服務(AI Assistant for Aging Services)")
+
+    # 添加一些間距
+    st.markdown("<br>", unsafe_allow_html=True)
 
     # 定義服務列表
     services = [
@@ -27,7 +30,7 @@ def main():
                 if service["url"]:
                     st.markdown(f"""
                     <div style="
-                        background-color: #f8f9fa;
+                        background-color: #81D8D0;
                         border-radius: 10px;
                         padding: 20px;
                         text-align: center;
@@ -38,15 +41,22 @@ def main():
                         align-items: center;
                         margin-bottom: 20px;
                     ">
-                        <h3 style="margin-bottom: 10px;">{service['name']}</h3>
-                        <p style="margin-bottom: 10px;">{service['en_name']}</p>
-                        <a href="{service['url']}" target="_blank">前往服務</a>
+                        <h3 style="margin-bottom: 10px; color: #ffffff;">{service['name']}</h3>
+                        <p style="margin-bottom: 10px; color: #ffffff;">{service['en_name']}</p>
+                        <a href="{service['url']}" target="_blank" style="
+                            background-color: #ffffff;
+                            color: #81D8D0;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            font-weight: bold;
+                        ">前往服務</a>
                     </div>
                     """, unsafe_allow_html=True)
                 else:
                     st.markdown(f"""
                     <div style="
-                        background-color: #ffeeba;
+                        background-color: #F0F0F0;
                         border-radius: 10px;
                         padding: 20px;
                         text-align: center;
@@ -57,9 +67,9 @@ def main():
                         align-items: center;
                         margin-bottom: 20px;
                     ">
-                        <h3 style="margin-bottom: 10px;">{service['name']}</h3>
-                        <p style="margin-bottom: 10px;">{service['en_name']}</p>
-                        <small>建構中 (Under Construction)</small>
+                        <h3 style="margin-bottom: 10px; color: #333333;">{service['name']}</h3>
+                        <p style="margin-bottom: 10px; color: #333333;">{service['en_name']}</p>
+                        <small style="color: #666666;">建構中 (Under Construction)</small>
                     </div>
                     """, unsafe_allow_html=True)
 
