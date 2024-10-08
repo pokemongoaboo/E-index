@@ -19,7 +19,7 @@ def main():
         {"name": "整理新知", "en_name": "Update Information", "url": "https://e-langchainrag.streamlit.app/"},
         {"name": "圖卡生成", "en_name": "Create Picture", "url": "https://e-pokemongoaboo.streamlit.app/"},
         {"name": "掃描預約", "en_name": "Set Calendar", "url": "https://e-ocr2cal.streamlit.app/"},
-        {"name": "創意繪本", "en_name": "Paint Books", "url": "https://e-paintbook2.streamlit.app/"},
+        {"name": "創意繪本(語音版)", "en_name": "Paint Books", "url": "https://acgsound.streamlit.app/"},
         {"name": "浪漫樂曲", "en_name": "Make Music", "url": "https://e-sunoapi0808.streamlit.app/"},
         {"name": "更多工具", "en_name": "More Tools", "url": None},
         {"name": "應用市集", "en_name": "Apps Market", "url": None}
