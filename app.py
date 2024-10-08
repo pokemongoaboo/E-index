@@ -21,7 +21,9 @@ def main():
         {"name": "浪漫樂曲(國)", "en_name": "Make Music", "url": "https://e-sunoapi_C.streamlit.app/"},
         {"name": "浪漫樂曲(英)", "en_name": "Make Music", "url": "https://e-sunoapi_E.streamlit.app/"},
         {"name": "更多工具", "en_name": "More Tools", "url": None},
-        {"name": "應用市集", "en_name": "Apps Market", "url": None}
+        {"name": "應用市集", "en_name": "Apps Market", "url": None},
+        {"name": "與我聯繫", "en_name": "Contact Us", "url": None}
+        
     ]
 
     # 使用Streamlit的列和列布局創建九宮格
