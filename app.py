@@ -14,13 +14,12 @@ def main():
 
     # 定義服務列表
     services = [
-        {"name": "查行事曆", "en_name": "Check Calendar", "url": "https://e-readcalendar.streamlit.app/"},
         {"name": "查農民曆", "en_name": "Lunar Calendar", "url": "https://e-lunarexp.streamlit.app/"},
-        {"name": "整理新知", "en_name": "Update Information", "url": "https://e-langchainrag.streamlit.app/"},
-        {"name": "圖卡生成", "en_name": "Create Picture", "url": "https://e-pokemongoaboo.streamlit.app/"},
-        {"name": "掃描預約", "en_name": "Set Calendar", "url": "https://e-ocr2cal.streamlit.app/"},
         {"name": "創意繪本(語音版)", "en_name": "Paint Books", "url": "https://acgsound.streamlit.app/"},
-        {"name": "浪漫樂曲", "en_name": "Make Music", "url": "https://e-sunoapi0808.streamlit.app/"},
+        {"name": "整理新知", "en_name": "Update Information", "url": "https://e-langchainrag.streamlit.app/"},
+        {"name": "浪漫樂曲(台)", "en_name": "Make Music", "url": "https://e-sunoapi0808.streamlit.app/"},
+        {"name": "浪漫樂曲(國)", "en_name": "Make Music", "url": "https://e-sunoapi_C.streamlit.app/"},
+        {"name": "浪漫樂曲(英)", "en_name": "Make Music", "url": "https://e-sunoapi_E.streamlit.app/"},
         {"name": "更多工具", "en_name": "More Tools", "url": None},
         {"name": "應用市集", "en_name": "Apps Market", "url": None}
     ]
