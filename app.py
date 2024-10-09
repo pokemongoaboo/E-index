@@ -18,8 +18,8 @@ def main():
         {"name": "創意繪本(語音版)", "en_name": "Paint Books", "url": "https://acgsound.streamlit.app/"},
         {"name": "整理新知", "en_name": "Update Information", "url": "https://e-langchainrag.streamlit.app/"},
         {"name": "浪漫樂曲(台)", "en_name": "Make Music", "url": "https://e-sunoapi0808.streamlit.app/"},
-        {"name": "浪漫樂曲(國)", "en_name": "Make Music", "url": "https://e-sunoapi_C.streamlit.app/"},
-        {"name": "浪漫樂曲(英)", "en_name": "Make Music", "url": "https://e-sunoapi_E.streamlit.app/"},
+        {"name": "浪漫樂曲(國)", "en_name": "Make Music", "url": "https://e-sunoapi-ch.streamlit.app/"},
+        {"name": "浪漫樂曲(英)", "en_name": "Make Music", "url": "https://e-sunoapi-eng.streamlit.app/"},
         {"name": "更多工具", "en_name": "More Tools", "url": None},
         {"name": "應用市集", "en_name": "Apps Market", "url": None},
         {"name": "與我聯繫", "en_name": "Contact Us", "url": None}
