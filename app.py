@@ -22,7 +22,7 @@ def main():
         {"name": "浪漫樂曲(英)", "en_name": "Make Music", "url": "https://e-sunoapi-eng.streamlit.app/"},
         {"name": "更多工具", "en_name": "More Tools", "url": None},
         {"name": "應用市集", "en_name": "Apps Market", "url": None},
-        {"name": "與我聯繫", "en_name": "Contact Us", "url": None}
+        {"name": "共好公益", "en_name": "Common Good", "url": None}
         
     ]
 
